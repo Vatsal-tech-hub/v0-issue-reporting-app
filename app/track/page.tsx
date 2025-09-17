@@ -12,6 +12,7 @@ import { ArrowLeft, Search, MapPin, Clock, User, Phone, Mail, CheckCircle, Alert
 import Link from "next/link"
 import { createClient } from "@/lib/supabase/client"
 import { useSearchParams } from "next/navigation"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 interface Issue {
   id: string
@@ -136,21 +137,26 @@ export default function TrackPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       {/* Header */}
-      <header className="bg-white/80 backdrop-blur-sm border-b border-blue-100 sticky top-0 z-50">
+      <header className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-blue-100 dark:border-gray-700 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center gap-4">
-            <Link href="/">
-              <Button variant="ghost" size="sm">
-                <ArrowLeft className="h-4 w-4 mr-2" />
-                Back
-              </Button>
-            </Link>
-            <div>
-              <h1 className="text-xl font-bold text-gray-900">Track Your Report</h1>
-              <p className="text-sm text-gray-600">Check the status of your community issue report</p>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <Link href="/">
+                <Button variant="ghost" size="sm">
+                  <ArrowLeft className="h-4 w-4 mr-2" />
+                  Back
+                </Button>
+              </Link>
+              <div>
+                <h1 className="text-xl font-bold text-gray-900 dark:text-white">Track Your Report</h1>
+                <p className="text-sm text-gray-600 dark:text-gray-300">
+                  Check the status of your community issue report
+                </p>
+              </div>
             </div>
+            <ThemeToggle />
           </div>
         </div>
       </header>

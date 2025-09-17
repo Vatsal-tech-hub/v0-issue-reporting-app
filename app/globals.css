@@ -6,7 +6,7 @@
 :root {
   /* Updated to refined aesthetic color palette */
   --background: #ffffff; /* Clean white background */
-  --foreground: #475569; /* Sophisticated dark gray */
+  --foreground: #1e293b; /* Much darker gray for better contrast */
   --card: #f1f5f9; /* Elegant light gray cards */
   --card-foreground: #374151; /* Rich dark gray text */
   --popover: #ffffff; /* Pure white popovers */
@@ -150,11 +150,18 @@
     animation: scaleIn 0.6s ease-out;
   }
 
+  /* Updated glass-effect to work properly in both light and dark modes */
   .glass-effect {
     backdrop-filter: blur(16px);
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  .dark .glass-effect {
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid rgba(51, 65, 85, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   }
 
   .gradient-mesh {

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { ThemeToggle } from "@/components/theme-toggle"
 import {
   MapPin,
   Clock,
@@ -140,7 +141,7 @@ export default async function HomePage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="glass-effect sticky top-0 z-50 border-b border-border/50">
+      <header className="glass-effect sticky top-0 z-50 border-b border-border/50 dark:bg-slate-900/95 dark:backdrop-blur-md">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
@@ -151,20 +152,23 @@ export default async function HomePage() {
                 <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-r from-chart-4 to-chart-3 rounded-full animate-pulse"></div>
               </div>
               <div>
-                <h1 className="text-2xl font-black text-gradient">UrbanPulse</h1>
+                <h1 className="text-2xl font-black text-foreground">UrbanPulse</h1>
                 <p className="text-sm text-muted-foreground font-light">Making our city better, together</p>
               </div>
             </div>
-            <Link href="/admin">
-              <Button
-                variant="outline"
-                size="sm"
-                className="hover:bg-primary hover:text-primary-foreground transition-all duration-300 bg-transparent border-2 border-primary/30 font-medium"
-              >
-                Admin Portal
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
+            <div className="flex items-center gap-3">
+              <ThemeToggle />
+              <Link href="/admin">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="hover:bg-primary hover:text-primary-foreground transition-all duration-300 border-2 border-primary/30 font-medium text-foreground bg-background"
+                >
+                  Admin Portal
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </header>

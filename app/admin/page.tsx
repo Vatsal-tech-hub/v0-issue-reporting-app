@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { BarChart3, Users, AlertTriangle, CheckCircle, Clock, TrendingUp, MapPin, Calendar, Filter } from "lucide-react"
 import Link from "next/link"
 import { NotificationCenter } from "@/components/admin/notification-center"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 async function getAdminStats() {
   const supabase = await createClient()
@@ -97,18 +98,19 @@ export default async function AdminDashboard() {
   const stats = await getAdminStats()
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       {/* Header */}
-      <header className="bg-white border-b border-gray-200">
+      <header className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
         <div className="px-6 py-4">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">Admin Dashboard</h1>
-              <p className="text-gray-600">Welcome back, {adminUser.full_name}</p>
+              <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Admin Dashboard</h1>
+              <p className="text-gray-600 dark:text-gray-300">Welcome back, {adminUser.full_name}</p>
             </div>
             <div className="flex items-center gap-4">
               <NotificationCenter adminUser={adminUser} />
               <Badge variant="secondary">{adminUser.role}</Badge>
+              <ThemeToggle />
               <Link href="/admin/logout">
                 <Button variant="outline" size="sm">
                   Sign Out
