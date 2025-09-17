@@ -151,7 +151,7 @@ export default async function HomePage() {
                 <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-r from-chart-4 to-chart-3 rounded-full animate-pulse"></div>
               </div>
               <div>
-                <h1 className="text-2xl font-black text-gradient">CivicReport</h1>
+                <h1 className="text-2xl font-black text-gradient">UrbanPulse</h1>
                 <p className="text-sm text-muted-foreground font-light">Making our city better, together</p>
               </div>
             </div>
@@ -212,7 +212,7 @@ export default async function HomePage() {
       <section className="py-20 px-4 bg-gradient-to-b from-background to-card/30">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
-            <h3 className="text-3xl md:text-4xl font-black text-foreground mb-4">Why Choose CivicReport?</h3>
+            <h3 className="text-3xl md:text-4xl font-black text-foreground mb-4">Why Choose UrbanPulse?</h3>
             <p className="text-lg text-muted-foreground font-light">
               Trusted by thousands of citizens and city officials
             </p>
@@ -350,7 +350,7 @@ export default async function HomePage() {
                 <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
                   <MapPin className="h-7 w-7 text-primary-foreground" />
                 </div>
-                <h4 className="text-xl font-black text-foreground">CivicReport</h4>
+                <h4 className="text-xl font-black text-foreground">UrbanPulse</h4>
               </div>
               <p className="text-muted-foreground mb-6 font-light leading-relaxed">
                 Empowering citizens to improve their communities through easy issue reporting. Making cities better, one
@@ -383,7 +383,7 @@ export default async function HomePage() {
             <div>
               <h5 className="font-bold mb-6 text-foreground">Contact</h5>
               <ul className="space-y-3">
-                <li className="text-muted-foreground font-light">support@civicreport.gov</li>
+                <li className="text-muted-foreground font-light">support@urbanpulse.gov</li>
                 <li className="text-muted-foreground font-light">(555) 123-4567</li>
                 <li className="text-muted-foreground font-light">Emergency: 911</li>
               </ul>
@@ -391,7 +391,7 @@ export default async function HomePage() {
           </div>
           <div className="border-t border-border mt-12 pt-8 text-center">
             <p className="text-muted-foreground font-light">
-              &copy; 2024 CivicReport. Making communities better, together.
+              &copy; 2024 UrbanPulse. Making communities better, together.
             </p>
           </div>
         </div>

@@ -67,7 +67,7 @@ export default function AdminLoginPage() {
               <MapPin className="h-7 w-7 text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">CivicReport</h1>
+              <h1 className="text-2xl font-bold text-gray-900">UrbanPulse</h1>
               <p className="text-sm text-gray-600">Admin Portal</p>
             </div>
           </div>

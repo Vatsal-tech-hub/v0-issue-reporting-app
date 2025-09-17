@@ -378,7 +378,7 @@ export default function TrackPage() {
                   Contact us if you have questions about your report or need additional assistance.
                 </p>
                 <p className="text-sm text-gray-600">
-                  Email: support@civicreport.gov
+                  Email: support@urbanpulse.gov
                   <br />
                   Phone: (555) 123-4567
                 </p>

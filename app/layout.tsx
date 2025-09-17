@@ -20,7 +20,7 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "CivicReport - Community Issue Reporting Platform",
+  title: "UrbanPulse - Community Issue Reporting Platform",
   description: "Report and track civic issues in your community. Making cities better, together.",
   generator: "v0.app",
 }
