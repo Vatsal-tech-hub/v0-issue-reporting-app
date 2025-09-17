@@ -1,81 +1,84 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
+@import "tailwindcss";
+@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  /* Updated to refined aesthetic color palette */
+  --background: #ffffff; /* Clean white background */
+  --foreground: #475569; /* Sophisticated dark gray */
+  --card: #f1f5f9; /* Elegant light gray cards */
+  --card-foreground: #374151; /* Rich dark gray text */
+  --popover: #ffffff; /* Pure white popovers */
+  --popover-foreground: #374151; /* Dark gray popover text */
+  --primary: #059669; /* Premium emerald primary */
+  --primary-foreground: #ffffff; /* Crisp white text */
+  --secondary: #10b981; /* Refined emerald secondary */
+  --secondary-foreground: #ffffff; /* Clean white text */
+  --muted: #f1f5f9; /* Subtle light gray */
+  --muted-foreground: #475569; /* Muted dark gray */
+  --accent: #10b981; /* Vibrant emerald accent */
+  --accent-foreground: #ffffff; /* Pure white accent text */
+  --destructive: #be123c; /* Sophisticated red */
+  --destructive-foreground: #ffffff; /* White destructive text */
+  --border: #e5e7eb; /* Delicate light border */
+  --input: #f1f5f9; /* Clean input background */
+  --ring: #059669; /* Emerald focus ring */
+  --chart-1: #10b981; /* Primary chart emerald */
+  --chart-2: #6366f1; /* Elegant blue */
+  --chart-3: #ec4899; /* Vibrant pink */
+  --chart-4: #fbbf24; /* Golden yellow */
+  --chart-5: #1d4ed8; /* Deep blue */
+  --radius: 1rem; /* Generous rounded corners */
+  --sidebar: #ffffff; /* Clean sidebar */
+  --sidebar-foreground: #374151; /* Dark sidebar text */
+  --sidebar-primary: #f8fafc; /* Light sidebar primary */
+  --sidebar-primary-foreground: #374151; /* Dark primary text */
+  --sidebar-accent: #10b981; /* Emerald sidebar accent */
+  --sidebar-accent-foreground: #ffffff; /* White accent text */
+  --sidebar-border: #e5e7eb; /* Subtle sidebar border */
+  --sidebar-ring: #059669; /* Emerald sidebar ring */
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  --background: #0f172a; /* Deep sophisticated dark */
+  --foreground: #f1f5f9; /* Bright light text */
+  --card: #1e293b; /* Rich dark cards */
+  --card-foreground: #f1f5f9; /* Light card text */
+  --popover: #1e293b; /* Dark popover */
+  --popover-foreground: #f1f5f9; /* Light popover text */
+  --primary: #10b981; /* Bright emerald primary */
+  --primary-foreground: #0f172a; /* Dark primary text */
+  --secondary: #334155; /* Muted dark secondary */
+  --secondary-foreground: #f1f5f9; /* Light secondary text */
+  --muted: #334155; /* Dark muted */
+  --muted-foreground: #94a3b8; /* Medium gray muted */
+  --accent: #334155; /* Dark accent */
+  --accent-foreground: #f1f5f9; /* Light accent text */
+  --destructive: #ef4444; /* Bright red destructive */
+  --destructive-foreground: #f1f5f9; /* Light destructive text */
+  --border: #334155; /* Dark border */
+  --input: #334155; /* Dark input */
+  --ring: #475569; /* Dark ring */
+  --chart-1: #10b981; /* Emerald chart */
+  --chart-2: #6366f1; /* Blue chart */
+  --chart-3: #ec4899; /* Pink chart */
+  --chart-4: #fbbf24; /* Yellow chart */
+  --chart-5: #1d4ed8; /* Deep blue chart */
+  --sidebar: #1e293b; /* Dark sidebar */
+  --sidebar-foreground: #f1f5f9; /* Light sidebar text */
+  --sidebar-primary: #10b981; /* Emerald sidebar primary */
+  --sidebar-primary-foreground: #0f172a; /* Dark primary text */
+  --sidebar-accent: #334155; /* Dark sidebar accent */
+  --sidebar-accent-foreground: #f1f5f9; /* Light accent text */
+  --sidebar-border: #334155; /* Dark sidebar border */
+  --sidebar-ring: #475569; /* Dark sidebar ring */
 }
 
 @theme inline {
-  --font-sans: var(--font-geist-sans);
+  /* Updated font variables to use premium typography */
+  --font-sans: var(--font-open-sans); /* Open Sans for body text */
+  --font-serif: var(--font-montserrat); /* Montserrat for headings */
   --font-mono: var(--font-geist-mono);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -121,5 +124,86 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  /* Added premium typography classes */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif; /* Use Montserrat for all headings */
+  }
+}
+
+/* Enhanced animations and aesthetic effects */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 1s ease-out;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.6s ease-out;
+  }
+
+  .glass-effect {
+    backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  .gradient-mesh {
+    background: radial-gradient(circle at 20% 80%, rgba(5, 150, 105, 0.12) 0%, transparent 60%),
+      radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.12) 0%, transparent 60%),
+      radial-gradient(circle at 40% 40%, rgba(34, 197, 94, 0.08) 0%, transparent 60%);
+  }
+
+  .premium-shadow {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #059669, #10b981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
